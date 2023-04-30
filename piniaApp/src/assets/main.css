@@ -1,0 +1,87 @@
+@import "./base.css";
+
+#app {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  font-weight: 500 ;
+}
+
+
+nav {
+  margin-left: -1rem;
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+nav a.router-link-active {
+  color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var( --color-border );
+  color: var( --color-text );
+  cursor: pointer;
+  margin: 10px 5px 10px 0;
+  padding: 10px;
+  transition: all .5s;
+}
+
+button:hover {
+  background-color: hsla(160, 100%, 37%, 0.3);
+  transition: all .3s;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.active {
+  background-color:hsla(160, 100%, 37%, 0.3);
+}
+
+input {
+  width: 23rem;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var( --color-border );
+  color: var( --color-text );
+  font-size: 15px;
+}
+
+input:focus {
+  outline-color: hsla(160, 100%, 37%, 0.3);
+}
+
